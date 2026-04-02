@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Quản Lý Sản Phẩm</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <div class="header">
+        <h2>Product Management</h2>
+        <a href="add-product.html" class="btn-add" onclick="clearEdit()">+ Add product</a>
+    </div>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Sản phẩm</th>
+                <th>Danh mục</th>
+                <th>Giá</th>
+                <th>Tồn kho</th>
+                <th>Hành động</th>
+            </tr>
+        </thead>
+        <tbody id="table-body">
+            </tbody>
+    </table>
+</div>
+
+<script src="list.js"></script>
+</body>
+</html>

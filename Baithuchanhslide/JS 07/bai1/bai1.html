@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Events</title>
+    <style>
+        .box { padding: 30px; border: 2px solid #333; cursor: pointer; margin-top: 10px; }
+        .ngoai { background-color: #ffcccc; }
+        .giua { background-color: #ccffcc; }
+        .trong { background-color: #ccccff; }
+    </style>
+</head>
+<body>
+
+    <h3>1. Click Event</h3>
+    <button id="nut-click">Click vào đây</button>
+
+    <hr>
+
+    <h3>2. Keyboard Event</h3>
+    <input type="text" id="o-nhap-phim" placeholder="Click và ghi chữ ...">
+
+    <hr>
+
+    <h3>3. Submit Form </h3>
+    <form id="form-thu-nghiem">
+        <input type="text" placeholder="Nhập tên">
+        <button type="submit">Gửi</button>
+    </form>
+
+    <hr>
+
+    <h3>4. Event Bubbling </h3>
+    <div id="div-ngoai" class="box ngoai">DIV NGOÀI CÙNG
+        <div id="div-giua" class="box giua">DIV Ở GIỮA
+            <div id="div-trong" class="box trong">DIV TRONG CÙNG</div>
+        </div>
+    </div>
+
+    <hr>
+
+    <h3>5. Event Delegation (Uỷ quyền sự kiện)</h3>
+    <ul id="danh-sach">
+        <li style="cursor: pointer; padding: 5px; background: #eee; margin: 2px;">Mục 1</li>
+        <li style="cursor: pointer; padding: 5px; background: #eee; margin: 2px;">Mục 2</li>
+        <li style="cursor: pointer; padding: 5px; background: #eee; margin: 2px;">Mục 3</li>
+    </ul>
+
+    <script src="bai1.js"></script>
+</body>
+</html>

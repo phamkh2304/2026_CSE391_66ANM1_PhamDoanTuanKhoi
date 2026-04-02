@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Thêm/Sửa Sản Phẩm</title>
+    <link rel="stylesheet" href="style.css"> 
+</head>
+<body>
+
+<div class="container">
+    <h2 id="form-title">Thêm Sản Phẩm Mới</h2>
+    
+    <div class="form-grid">
+        <div class="form-group">
+            <label>Tên sản phẩm</label>
+            <input type="text" id="name" placeholder="Nhập tên sản phẩm">
+        </div>
+        <div class="form-group">
+            <label>Giá sản phẩm</label>
+            <input type="number" id="price" placeholder="Nhập giá">
+        </div>
+        <div class="form-group full-width">
+            <label>Mô tả sản phẩm</label>
+            <input type="text" id="description" placeholder="Nhập mô tả">
+        </div>
+        <div class="form-group">
+            <label>Danh mục</label>
+            <select id="category">
+                <option value="PC/Desktop">PC/Desktop</option>
+                <option value="Gaming/Console">Gaming/Console</option>
+                <option value="Smartphone">Smartphone</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label>Số lượng tồn kho</label>
+            <input type="number" id="stock" placeholder="Nhập số lượng">
+        </div>
+        <div class="form-group">
+            <label>Mật khẩu quản trị</label>
+            <input type="password" id="password" placeholder="Nhập mật khẩu">
+        </div>
+        <div class="form-group">
+            <label>Xác nhận mật khẩu</label>
+            <input type="password" id="confirmPassword" placeholder="Nhập lại mật khẩu">
+        </div>
+    </div>
+
+    <div id="error-msg" class="error-message"></div>
+
+    <button class="btn-save" onclick="saveProduct()">Lưu sản phẩm</button>
+    <a href="products.html" class="btn-cancel">Hủy</a>
+</div>
+
+<script src="add.js"></script>
+</body>
+</html>
